@@ -36,7 +36,10 @@ double round(double num) {
 }
 
 // Absolute functions
-
 int absolute(int num) {
+    return (num < 0) ? num * -1 : num;
+}
+
+double fabsolute(double num) {
     return (num < 0) ? num * -1 : num;
 }

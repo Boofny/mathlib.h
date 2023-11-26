@@ -16,6 +16,8 @@ int main(void) {
     printf("Example of flooring:                %.2f\n\n", floor(4.6));
 
     printf("Example of absolute integer value:  %.d\n", absolute(-30));
-    printf("Example of absolute integer value:  %.d\n", absolute(30));
+    printf("Example of absolute integer value:  %.d\n", absolute(25));
+    printf("Example of absolute float value:    %.d\n", absolute(-5.2));
+    printf("Example of absolute float value:    %.d\n", absolute(6.3));
     return 0;
 }
