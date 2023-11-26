@@ -10,6 +10,8 @@ int main(void) {
     printf("Example of multiplication:  %.2f\n", multiply(23, 11));
     printf("Example of division:        %.2f\n\n", divide(12, 2));
 
+    printf("Example of rounding (> .5): %.2f\n", round(4.6));
+    printf("Example of rounding (< .5): %.2f\n", round(4.5));
     printf("Example of ceiling:         %.2f\n", ceil(4.6));
     printf("Example of flooring:        %.2f\n", floor(4.6));
     return 0;

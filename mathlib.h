@@ -29,3 +29,8 @@ double ceil(double num) {
 double floor(double num) {
     return (int)num;
 }
+
+double round(double num) {
+    if (num >= num / 2.00) return ceil(num);
+    else return floor(num);
+}
