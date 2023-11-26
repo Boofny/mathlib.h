@@ -43,3 +43,7 @@ int absolute(int num) {
 double fabsolute(double num) {
     return (num < 0) ? num * -1 : num;
 }
+
+double copysign(double num1, double num2) {
+    return (num2 < 0) ? fabsolute(num1) : num1;
+}

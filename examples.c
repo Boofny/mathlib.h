@@ -17,7 +17,9 @@ int main(void) {
 
     printf("Example of absolute integer value:  %.d\n", absolute(-30));
     printf("Example of absolute integer value:  %.d\n", absolute(25));
-    printf("Example of absolute float value:    %.d\n", absolute(-5.2));
-    printf("Example of absolute float value:    %.d\n", absolute(6.3));
+    printf("Example of absolute float value:    %.2f\n", absolute(-5.2));
+    printf("Example of absolute float value:    %.2f\n", absolute(6.3));
+    printf("Example of copy sign value:         %.2f\n", copysign(3.5, -7.5));
+    printf("Example of copy sign value:         %.2f\n", copysign(3.5, 7.5));
     return 0;
 }
