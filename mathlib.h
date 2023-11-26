@@ -37,6 +37,6 @@ double round(double num) {
 
 // Absolute functions
 
-double absolute(double num) {
+int absolute(int num) {
     return (num < 0) ? num * -1 : num;
 }
