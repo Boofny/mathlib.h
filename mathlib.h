@@ -22,6 +22,10 @@ double divide(double num1, double num2) {
 }
 
 // Rounding functions
+double ceil(double num) {
+    return (int)num + 1;
+}
+
 double floor(double num) {
     return (int)num;
 }
