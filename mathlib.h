@@ -35,6 +35,10 @@ double round(double num) {
     else return floor(num);
 }
 
+double truncate(double num) {
+    return (int)num;
+}
+
 // Absolute functions
 int absolute(int num) {
     return (num < 0) ? num * -1 : num;

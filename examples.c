@@ -13,7 +13,8 @@ int main(void) {
     printf("Example of rounding (> .5):         %.2f\n", round(4.6));
     printf("Example of rounding (< .5):         %.2f\n", round(4.5));
     printf("Example of ceiling:                 %.2f\n", ceil(4.6));
-    printf("Example of flooring:                %.2f\n\n", floor(4.6));
+    printf("Example of flooring:                %.2f\n", floor(4.6));
+    printf("Example of truncating:              %f\n\n", truncate(1.23456));
 
     printf("Example of absolute integer value:  %.d\n", absolute(-30));
     printf("Example of absolute integer value:  %.d\n", absolute(25));
