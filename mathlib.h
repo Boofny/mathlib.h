@@ -1,10 +1,8 @@
 #pragma once
 
-// Constants
 #define PI 3.14159265358979323846
 #define E  2.71828182845904523536
 
-// Basic aritmetic functions
 double add(double num1, double num2) {
     return num1 + num2;
 }
@@ -21,7 +19,6 @@ double divide(double num1, double num2) {
     return num1 / num2;
 }
 
-// Rounding functions
 double ceil(double num) {
     return (int)num + 1;
 }
@@ -39,7 +36,6 @@ double truncate(double num) {
     return (int)num;
 }
 
-// Absolute functions
 int absolute(int num) {
     return (num < 0) ? num * -1 : num;
 }
@@ -52,7 +48,6 @@ double copysign(double num1, double num2) {
     return (num2 < 0) ? fabsolute(num1) : num1;
 }
 
-// Power functions
 double power(double num, double exponent) {
     if (exponent > 0) {
         int result = 1;
