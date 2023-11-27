@@ -16,8 +16,9 @@ int main(void) {
     printf("Example of flooring: %.2f\n", floor(4.6));
     printf("Example of truncating: %f\n\n", truncate(1.23456));
 
-    printf("Example of the power function (positive, integer exponent): %.2f\n", power(2, 2));
+    printf("Example of the power function (positive, integer exponent): %.2f\n", power(4, 2));
     printf("Example of the power function (exponent is zero): %.2f\n", power(3, 0));
+    printf("Example of the power function (exponent is negative): %f\n", power(2, -3));
 
     printf("Example of absolute integer value: %.d\n", absolute(-30));
     printf("Example of absolute integer value: %.d\n", absolute(25));

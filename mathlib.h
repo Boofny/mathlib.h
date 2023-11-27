@@ -39,6 +39,19 @@ double truncate(double num) {
     return (int)num;
 }
 
+// Absolute functions
+int absolute(int num) {
+    return (num < 0) ? num * -1 : num;
+}
+
+double fabsolute(double num) {
+    return (num < 0) ? num * -1 : num;
+}
+
+double copysign(double num1, double num2) {
+    return (num2 < 0) ? fabsolute(num1) : num1;
+}
+
 // Power functions
 double power(double num, double exponent) {
     if (exponent > 0) {
@@ -52,17 +65,13 @@ double power(double num, double exponent) {
     if (exponent == 0) {
         return 1;
     }
-}
 
-// Absolute functions
-int absolute(int num) {
-    return (num < 0) ? num * -1 : num;
-}
-
-double fabsolute(double num) {
-    return (num < 0) ? num * -1 : num;
-}
-
-double copysign(double num1, double num2) {
-    return (num2 < 0) ? fabsolute(num1) : num1;
+    if (exponent < 0) {
+        int positiveExponent = (int)absolute(exponent);
+        int result = 1;
+        for (int i = 1; i <= positiveExponent; i++) {
+            result *= num;
+        }
+        return (double)1 / result;;
+    }
 }
