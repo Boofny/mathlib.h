@@ -39,6 +39,17 @@ double truncate(double num) {
     return (int)num;
 }
 
+// Power functions
+double power(double num, double exponent) {
+    if (exponent > 0) {
+        int result = 1;
+        for (int i = 1; i <= exponent; i++) {
+            result *= num;
+        }
+        return result;
+    }
+}
+
 // Absolute functions
 int absolute(int num) {
     return (num < 0) ? num * -1 : num;
