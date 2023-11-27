@@ -48,6 +48,10 @@ double power(double num, double exponent) {
         }
         return result;
     }
+
+    if (exponent == 0) {
+        return 1;
+    }
 }
 
 // Absolute functions
