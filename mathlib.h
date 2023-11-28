@@ -23,7 +23,7 @@ double divide(double num1, double num2) {
 
 int factorial(int num) {
     if (num < 0) return -1; // Cannot calculate factorial of a negative integer
-    if (num == 0) return 1; 
+    if (num == 0 || num == 1) return 1; 
 
     int result = 1;
     for (int i = 1; i <= num; i++) {
