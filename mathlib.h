@@ -78,10 +78,24 @@ double power(double num, double exponent) {
         for (int i = 1; i <= positiveExponent; i++) {
             result *= num;
         }
-        return (double)1 / result;;
+        return (double)1 / result;
     }
 }
 
 double sinus(double radian) {
+    double result = 0;
+    double copyRadian = radian;
+    for(int i = 0; i < 10; i++) {
+        if (i % 2 != 0) {
+            double term = (power(copyRadian, i * 2 + 1) / factorial(i * 2 + 1));
+            result -= term;
+        }
+        
+        if (i % 2 == 0) {
+            double term = (power(copyRadian, i * 2 + 1) / factorial(i * 2 + 1));
+            result += term;
+        }
+    }
 
+    return fabsolute(result);
 }
