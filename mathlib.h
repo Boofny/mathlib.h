@@ -117,3 +117,7 @@ double cosine(double radian) {
 double tangent(double radian) {
     return sinus(radian) / cosine(radian);
 }
+
+double cotangent(double radian) {
+    return cosine(radian) / sinus(radian);
+}
