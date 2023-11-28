@@ -27,6 +27,9 @@ int main(void) {
     printf("Example of absolute float value: %.2f\n", fabsolute(-5.2));
     printf("Example of absolute float value: %.2f\n", fabsolute(6.3));
     printf("Example of copy sign value: %.2f\n", copysign(3.5, -7.5));
-    printf("Example of copy sign value: %.2f\n", copysign(3.5, 7.5));
+    printf("Example of copy sign value: %.2f\n\n", copysign(3.5, 7.5));
+
+    printf("Example of the sinus of a radian: %f\n", sinus(0.5));
+    printf("Example of the sinus of a radian: %f\n", sinus(1));
     return 0;
 }
