@@ -31,5 +31,7 @@ int main(void) {
 
     printf("Example of the sinus of a radian: %f\n", sinus(0.5));
     printf("Example of the sinus of a radian: %f\n", sinus(1));
+    printf("Example of the cosinus of a radian: %f\n", cosine(2));
+    printf("Example of the cosinus of a radian: %f\n", cosine(2.5));
     return 0;
 }
