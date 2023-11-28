@@ -61,7 +61,7 @@ double copysign(double num1, double num2) {
 
 double power(double num, double exponent) {
     if (exponent > 0) {
-        int result = 1;
+        double result = 1;
         for (int i = 1; i <= exponent; i++) {
             result *= num;
         }
@@ -80,4 +80,8 @@ double power(double num, double exponent) {
         }
         return (double)1 / result;;
     }
+}
+
+double sinus(double radian) {
+
 }
