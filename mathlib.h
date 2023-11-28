@@ -113,3 +113,7 @@ double cosine(double radian) {
 
     return result;
 }
+
+double tangent(double radian) {
+    return sinus(radian) / cosine(radian);
+}
