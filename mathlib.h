@@ -100,3 +100,16 @@ double sinus(double radian) {
 
     return fabsolute(result);
 } 
+
+double cosine(double radian) {
+    double result = 0;
+    double copyRadian = radian;
+    double term;
+    for(int i = 0; i < 10; i++) {
+        term = (power(-1, i) * (power(copyRadian, 2 * i)) / tgamma((2 * i) + 1));
+
+        result += term;
+    }
+
+    return result;
+}
