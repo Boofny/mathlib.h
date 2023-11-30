@@ -36,6 +36,9 @@ int main(void) {
     printf("Example of the tangent of a radian: %f\n", tangent(0.5));
     printf("Example of the tangent of a radian: %f\n", tangent(1));
     printf("Example of the cotangent of a radian: %f\n", cotangent(1));
-    printf("Example of the cotangent of a radian: %f\n", cotangent(2));
+    printf("Example of the cotangent of a radian: %f\n\n", cotangent(2));
+
+    printf("Example of the hyperbolic sine of a radian: %f\n", sineh(1));
+    printf("Example of the hyperbolic sine of a radian: %f\n", sineh(2.5));
     return 0;
 }
