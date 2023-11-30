@@ -80,7 +80,7 @@ double power(double num, double exponent) {
         for (int i = 1; i <= positiveExponent; i++) {
             result *= num;
         }
-        return (double)1 / result;
+        return (double)1.0 / result;
     }
 }
 
@@ -153,4 +153,19 @@ double tangenth(double radian) {
 
 double cotangenth(double radian) {
     return 1 / tangenth(radian);
+}
+
+double arcsine(double radian) {
+    if (-1 > radian || radian > 1) {
+        return 0;
+    }
+    double result = 0;
+    double copyRadian = radian;
+    double term;
+    for (int i = 0; i < 10; i++) {
+        term = (tgamma(2 * i + 1) / (power(2, 2 * i) * power(tgamma(i + 1), 2))) * (power(copyRadian, 2 * i + 1) / (2 * i + 1));
+        result += term;
+    }
+
+    return result;
 }
