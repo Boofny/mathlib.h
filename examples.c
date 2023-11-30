@@ -42,5 +42,6 @@ int main(void) {
     printf("Example of the hyperbolic sine of a radian: %f\n", sineh(2));
     printf("Example of the hyperbolic cosine of a radian: %f\n", cosineh(0.5));
     printf("Example of the hyperbolic cosine of a radian: %f\n", cosineh(1.5));
+    printf("Example of the hyperbolic tangent of a radian: %f\n", tangenth(3));
     return 0;
 }
