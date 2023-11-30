@@ -84,7 +84,7 @@ double power(double num, double exponent) {
     }
 }
 
-double sinus(double radian) {
+double sine(double radian) {
     double result = 0;
     double copyRadian = radian;
     double term;
