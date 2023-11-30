@@ -126,8 +126,21 @@ double sineh(double radian) {
     double result = 0;
     double copyRadian = radian;
     double term;
-    for(int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i++) {
         term = (power(copyRadian, (i * 2 + 1))) / tgamma((i * 2 + 1) + 1);
+        result += term;
+    }
+
+    return result;
+}
+
+double cosineh(double radian) {
+    double result = 0;
+    double copyRadian = radian;
+    double term;
+    
+    for (int i = 0; i < 10; i++) {
+        term = (power(copyRadian, 2 * i)) / tgamma((2 * i) + 1);
         result += term;
     }
 
