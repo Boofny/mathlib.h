@@ -150,3 +150,7 @@ double cosineh(double radian) {
 double tangenth(double radian) {
     return sineh(radian) / cosineh(radian);
 }
+
+double cotangenth(double radian) {
+    return 1 / tangenth(radian);
+}
