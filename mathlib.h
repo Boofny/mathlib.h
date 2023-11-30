@@ -115,11 +115,11 @@ double cosine(double radian) {
 }
 
 double tangent(double radian) {
-    return sinus(radian) / cosine(radian);
+    return sine(radian) / cosine(radian);
 }
 
 double cotangent(double radian) {
-    return cosine(radian) / sinus(radian);
+    return cosine(radian) / sine(radian);
 }
 
 double sineh(double radian) {
