@@ -119,7 +119,7 @@ double tangent(double radian) {
 }
 
 double cotangent(double radian) {
-    return cosine(radian) / sine(radian);
+    return 1 / tangent(radian);
 }
 
 double sineh(double radian) {
