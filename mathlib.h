@@ -146,3 +146,7 @@ double cosineh(double radian) {
 
     return result;
 }
+
+double tangenth(double radian) {
+    return sineh(radian) / cosineh(radian);
+}
